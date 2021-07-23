@@ -61,7 +61,7 @@ if(foodStock<=0){
 else{
   foodObj.updateFoodStock(foodStock-1)
 }
-database.ref('/').update({Food:getFoodStock(),FeedTime:hour()})
+database.ref('/').update({Food:foodObj.getFoodStock(),FeedTime:hour()})
 
 
 }
